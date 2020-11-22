@@ -19,7 +19,7 @@ public class SwaggerConfig {
 	public Docket parkingLotApi() {
 		return new Docket(DocumentationType.SWAGGER_2).groupName("ParkingLot-api").apiInfo(apiInfo()).select()
 		.apis(RequestHandlerSelectors.basePackage(
-				"com.springboot.parkinglot.controller"))
+				"com.example.chiran.microservices.training.microservicesTraining.controller"))
 		.build();
 				
 	}
@@ -28,9 +28,9 @@ public class SwaggerConfig {
 		private ApiInfo apiInfo() {
 		return new ApiInfoBuilder().title("Parking Lot API")
 				.description("Parking Lot API reference for developers")
-				.termsOfServiceUrl("http://ParkingLot.com")
-				.contact(new Contact("Parking Lot Application", "http://ParkingLot.com", "parkinglot@gmail.com")).license("Parking Lot License")
-				.licenseUrl("parkinglot@gmail.com").version("1.0").build();
+				.termsOfServiceUrl("http://cmadusankahw.github.io")
+				.contact(new Contact("Parking Lot Application", "http://cmadusankahw.github.io", "cmadusankahw@gmail.com")).license("MIT License")
+				.licenseUrl("cmadusankahw@gmail.com").version("1.0").build();
 	}
 
 }
